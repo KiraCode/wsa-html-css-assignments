@@ -37,6 +37,12 @@ const details = [
       "pre tag : Create a basic HTML code structure using the <code> tag.",
     fileNames: ["index.html"],
   },
+   {
+    id: 5,
+    description:
+      `Create a recipe page using HTML and CSS based on the provided template.`,
+    fileNames: ["index.html"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({

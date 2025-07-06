@@ -1,0 +1,121 @@
+<!--  Assignment-template: https://wsa-recipes.netlify.app/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Recipe Name</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+        padding-top: 80px; /* Extra top space for fixed header */
+        padding-bottom: 60px; /* Extra bottom space for fixed footer */
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: brown;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      main {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .intro,
+      .ingredients,
+      .instruction {
+        background-color: whitesmoke;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: coral;
+        margin-top: 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: brown;
+        color: white;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Delicious Recipe Name</h1>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>
+          A quick introduction to your recipe. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Dolorum cumque reiciendis, voluptatem
+          nulla sapiente illo cum sint ducimus commodi quae quidem deserunt
+          ratione tempora ea nisi ullam, vel perspiciatis provident!
+        </p>
+      </section>
+
+      <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Ingredient 1</li>
+          <li>Ingredient 2</li>
+          <li>Ingredient 3</li>
+          <li>Ingredient 4</li>
+          <li>Ingredient 5</li>
+          <li>Ingredient 6</li>
+          <li>Ingredient 7</li>
+          <li>... and so on</li>
+        </ul>
+      </section>
+
+      <section class="instruction">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Instruction 1</li>
+          <li>Instruction 2</li>
+          <li>Instruction 3</li>
+          <li>Instruction 4</li>
+          <li>Instruction 5</li>
+          <li>Instruction 6</li>
+          <li>... and so on</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 by KiraCode. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
