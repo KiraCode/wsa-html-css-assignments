@@ -25,9 +25,15 @@ const details = [
       "To Web page to display the name of six cities with different headings and minimum five sentences for each city",
     fileNames: ["index.html"],
   },
+  {
+    id: 3,
+    description:
+      "For this HTML classwork, you need to create a webpage where each image serves as a clickable area. When a user clicks on an image(HTML,CSS,JS), it should open a different webpage related to that image.",
+    fileNames: ["index.html"],
+  },
 ];
 
-export const assignment = details.map(({id, description, fileNames}) => ({
+export const assignment = details.map(({ id, description, fileNames }) => ({
   id,
   title: "Assignment ",
   image: imageName(id),

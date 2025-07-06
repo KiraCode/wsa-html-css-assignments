@@ -23,20 +23,25 @@ const Card = ({ id, title, description, image, view, icons, fileNames }) => {
     setCodeFiles(loadedFiles);
     setIsModalOpen(true);
   };
-  console.log(details);
 
   return (
     <div className="w-full sm:max-w-md lg:max-w-lg bg-primary rounded-t-lg rounded-b-2xl shadow-md flex flex-col overflow-hidden transition-all duration-300">
       <img
         src={image}
         alt={title}
+        onError={(e) => {
+          e.target.onerror = null; // prevent infinite loop
+          e.target.src =
+            "https://thumbs.dreamstime.com/b/code-editor-interface-computer-screen-development-programming-concept-283519018.jpg"; // your fallback image
+        }}
         className="w-full h-40 sm:h-38 lg:h-46 object-cover object-center rounded"
       />
 
       <div className="pt-0 px-2 pb-2 sm:px-2 sm:pb-2 sm:pt-0 flex-1 flex flex-col justify-between bg-gray-200">
         {/* Title */}
         <h2 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
-          {title}{id}
+          {title}
+          {id}
         </h2>
 
         {/* Description & read‑more */}

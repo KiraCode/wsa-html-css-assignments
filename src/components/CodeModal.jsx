@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function CodeModal({ isOpen, files, onClose, details }) {
   const [activeTab, setActiveTab] = useState("index.html");
-  console.log(details);
 
   const { id, desc } = details;
   if (!isOpen) return null;
