@@ -12,49 +12,41 @@ const imageName = (i) => {
   return `/Assignment/assignment-${i}/image.png`;
 };
 
-export const assignment = [
+const details = [
   {
-    title: "Assignment 1",
+    id: 1,
     description:
       "The web page which will redirect the user to another page automatically. The web page showing the information like keywords, description, and a title",
-    image: imageName(1),
-    view: {
-      liveLink: assignmentHtml(1),
-      gitLink: "https://github.com/KiraCode/travel-list",
-      gitIcon: github,
-      liveIcon: live,
-    },
-    icons: [
-      {
-        name: "Html",
-        src: html,
-      },
-      {
-        name: "Css",
-        src: css,
-      },
-    ],
+    fileNames: ["index.html", "redirected.html"],
   },
   {
-    title: "Assignment 2",
+    id: 2,
     description:
-      "Ta Web page to display the name of six cities with different headings and minimum five sentences for each city",
-    image: imageName(2),
-    view: {
-      liveLink: assignmentHtml(2),
-      gitLink: "https://github.com/KiraCode/travel-list",
-      gitIcon: github,
-      liveIcon: live,
-    },
-    icons: [
-      {
-        name: "Html",
-        src: html,
-      },
-      {
-        name: "Css",
-        src: css,
-      },
-    ],
+      "To Web page to display the name of six cities with different headings and minimum five sentences for each city",
+    fileNames: ["index.html"],
   },
 ];
+
+export const assignment = details.map(({id, description, fileNames}) => ({
+  id,
+  title: "Assignment ",
+  image: imageName(id),
+  description,
+  view: {
+    liveLink: assignmentHtml(id),
+    gitLink: assignmentHtml(id),
+    gitIcon: github,
+    liveIcon: live,
+  },
+  fileNames,
+  icons: [
+    {
+      name: "Html",
+      src: html,
+    },
+    {
+      name: "Css",
+      src: css,
+    },
+  ],
+}));
