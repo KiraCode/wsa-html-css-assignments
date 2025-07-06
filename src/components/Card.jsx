@@ -1,10 +1,29 @@
 import React, { useState } from "react";
+import { PiFileCode } from "react-icons/pi";
+import CodeModal from "./CodeModal";
 
-const Card = ({ title, description, image, view, icons }) => {
+const Card = ({ id, title, description, image, view, icons, fileNames }) => {
   const [expanded, setExpanded] = useState(false);
   const maxChars = 50;
   const isLong = description.length > maxChars;
   const preview = description.slice(0, maxChars);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [codeFiles, setCodeFiles] = useState({});
+  const [details, setDetails] = useState({});
+
+  const loadFiles = async (i, fileNames, description) => {
+    const folder = `/Assignment/assignment-${i}/`;
+
+    const loadedFiles = {};
+    for (let file of fileNames) {
+      const res = await fetch(folder + file);
+      loadedFiles[file] = await res.text();
+    }
+    setDetails({ id: i, desc: description });
+    setCodeFiles(loadedFiles);
+    setIsModalOpen(true);
+  };
+  console.log(details);
 
   return (
     <div className="w-full sm:max-w-md lg:max-w-lg bg-primary rounded-t-lg rounded-b-2xl shadow-md flex flex-col overflow-hidden transition-all duration-300">
@@ -17,7 +36,7 @@ const Card = ({ title, description, image, view, icons }) => {
       <div className="pt-0 px-2 pb-2 sm:px-2 sm:pb-2 sm:pt-0 flex-1 flex flex-col justify-between bg-gray-200">
         {/* Title */}
         <h2 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
-          {title}
+          {title}{id}
         </h2>
 
         {/* Description & read‑more */}
@@ -81,26 +100,23 @@ const Card = ({ title, description, image, view, icons }) => {
               </span>
             </div>
             <div className="relative group">
-              <a
-                href={view.gitLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View on GitHub"
-                className="text-gray-600 hover:text-black transition"
-              >
-                <img
-                  src={view.gitIcon}
-                  alt="tech-icon"
-                  className="w-4 h-4 sm:w-7 sm:h-7 object-contain mx-1  rounded-full outline-none"
-                />
-              </a>
+              <PiFileCode
+                onClick={() => loadFiles(id, fileNames, description)}
+                className="w-4 h-4 sm:w-7 sm:h-7 object-contain mx-1 rounded-full outline-none text-black hover:text-black transition"
+              />
               <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-black text-white rounded opacity-0 group-hover:opacity-100 transition">
-                Github
+                Code
               </span>
             </div>
           </div>
         </div>
       </div>
+      <CodeModal
+        isOpen={isModalOpen}
+        files={codeFiles}
+        details={details}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 };
