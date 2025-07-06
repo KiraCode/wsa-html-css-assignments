@@ -31,6 +31,12 @@ const details = [
       "For this HTML classwork, you need to create a webpage where each image serves as a clickable area. When a user clicks on an image(HTML,CSS,JS), it should open a different webpage related to that image.",
     fileNames: ["index.html"],
   },
+  {
+    id: 4,
+    description:
+      "pre tag : Create a basic HTML code structure using the <code> tag.",
+    fileNames: ["index.html"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({

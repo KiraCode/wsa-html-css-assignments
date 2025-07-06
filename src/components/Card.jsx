@@ -39,14 +39,14 @@ const Card = ({ id, title, description, image, view, icons, fileNames }) => {
 
       <div className="pt-0 px-2 pb-2 sm:px-2 sm:pb-2 sm:pt-0 flex-1 flex flex-col justify-between bg-gray-200">
         {/* Title */}
-        <h2 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
+        <h2 className="text-base sm:text-lg lg:text-xl font-semibold my-2">
           {title}
           {id}
         </h2>
 
         {/* Description & read‑more */}
         <p
-          className={`text-sm sm:text-base text-gray-700 leading-snug ${
+          className={`text-sm text-justify sm:text-base text-gray-700 leading-snug ${
             !expanded && isLong ? "line-clamp-2" : ""
           }`}
         >
