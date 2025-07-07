@@ -67,6 +67,11 @@ const details = [
     description: `Create the webpage shown in the below image using proper margin, padding and box-sizing if required. Make use of float and clear property. Completion requirements`,
     fileNames: ["index.html", "style.css"],
   },
+  {
+    id: 11,
+    description: `Create the following page using background property`,
+    fileNames: ["index.html", "style.css"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({
