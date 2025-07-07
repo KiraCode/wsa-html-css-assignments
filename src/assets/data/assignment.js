@@ -62,6 +62,11 @@ const details = [
     description: `Create the navbar as depicted in the below image using pseudo elements. Create the line separator using pseudo elements. Required image is provided in the google drive link.`,
     fileNames: ["index.html", "style.css"],
   },
+  {
+    id: 10,
+    description: `Create the webpage shown in the below image using proper margin, padding and box-sizing if required. Make use of float and clear property. Completion requirements`,
+    fileNames: ["index.html", "style.css"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({
