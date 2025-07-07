@@ -45,17 +45,22 @@ const details = [
   {
     id: 6,
     description: `Write the form as depicted in the below image`,
-    fileNames: ["index.html",'style.css'],
+    fileNames: ["index.html", "style.css"],
   },
   {
     id: 7,
     description: `Create the navbar as shown below`,
-    fileNames: ["index.html",'style.css'],
+    fileNames: ["index.html", "style.css"],
   },
   {
     id: 8,
     description: `Create the paragraph as depicted below and apply the css using pseudo classes.`,
-    fileNames: ["index.html",'style.css'],
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 9,
+    description: `Create the navbar as depicted in the below image using pseudo elements. Create the line separator using pseudo elements. Required image is provided in the google drive link.`,
+    fileNames: ["index.html", "style.css"],
   },
 ];
 
