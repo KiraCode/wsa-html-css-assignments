@@ -47,6 +47,11 @@ const details = [
     description: `Write the form as depicted in the below image`,
     fileNames: ["index.html",'style.css'],
   },
+  {
+    id: 7,
+    description: `Create the navbar as shown below`,
+    fileNames: ["index.html",'style.css'],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({

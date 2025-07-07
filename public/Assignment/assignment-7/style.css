@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 201, 163);
+  height: 10vh;
+}
+.nav div {
+  color: white;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav div:hover {
+  background-color: crimson;
+  color: rgb(241, 132, 132);
+}
