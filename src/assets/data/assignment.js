@@ -77,6 +77,11 @@ const details = [
     description: `Create the following responsive webpage as shown in the below image. Required images are provided in drive.`,
     fileNames: ["index.html", "style.css"],
   },
+  {
+    id: 13,
+    description: `Create the following layout using grid.`,
+    fileNames: ["index.html", "style.css"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({
