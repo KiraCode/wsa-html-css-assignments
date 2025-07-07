@@ -1,0 +1,335 @@
+div img {
+  height: 100px;
+  width: 100px;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+.container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns:
+    [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr
+    [c5] 1fr [c6] 1fr [c7] 1fr [c8] 1fr
+    [c9] 1fr [c10] 1fr [c11] 1fr [c12] 1fr [c13] 1fr;
+  /* repeat(13, 1fr); */
+  grid-template-rows:
+    [r1] 0.5fr [r2] 1fr [r3] 1fr [r4] 1fr
+    [r5] 1fr [r6] 0.5fr [r7] 1fr [r8] 0.5fr
+    [r9] 1fr [r10] 1fr [r11] 1fr [r12] 1fr [r13] 1fr;
+  /* repeat(13, 1fr); */
+  height: 100%;
+  padding: 25px;
+  background-color: gray;
+  gap: 10px;
+}
+.create {
+  grid-column: c1 / c7;
+  grid-row: r1 / r2;
+}
+.calcen {
+  display: grid;
+  grid-column: c1 / c3;
+  grid-row: r2 / r4;
+  object-fit: fill;
+  background-color: blue;
+  justify-content: center;
+  align-content: center;
+}
+.mailss {
+  display: flex;
+  grid-column: c3 / c7;
+  grid-row: r2 / r4;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding-top: 25px;
+  background-color: blue;
+}
+.paint-3d {
+  grid-column: c1 / c3;
+  grid-row: r4 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.office {
+  grid-column: c3 / c5;
+  grid-row: r4 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.word {
+  grid-column: c5 / c6;
+  grid-row: r4 / r5;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.powerpoint {
+  grid-column: c6 / c7;
+  grid-row: r4 / r5;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.excel {
+  grid-column: c5 / c6;
+  grid-row: r5 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.notes {
+  grid-column: c6 / c7;
+  grid-row: r5 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+/* EXPLORE */
+.explore {
+  grid-column: c1 / c7;
+  grid-row: r6 / r7;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.micro-logo {
+  grid-column: c1 / c5;
+  grid-row: r7 / r9;
+  background-color: white;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.browser {
+  grid-column: c5 / c7;
+  grid-row: r7 / r9;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.wheather {
+  grid-column: c1 / c3;
+  grid-row: r9 / r11;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.facebook {
+  grid-column: c3 / c5;
+  grid-row: r9 / r11;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.twitter {
+  grid-column: c5 / c7;
+  grid-row: r9 / r11;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.photoshop {
+  grid-column: c1 / c3;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.red {
+  grid-column: c3 / c5;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.pencil {
+  grid-column: c5 / c7;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.play {
+  grid-column: c7 / c13;
+  grid-row: r1 / r2;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.xbox {
+  grid-column: c7 / c9;
+  grid-row: r2 / r4;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.video {
+  grid-column: c9 / c10;
+  grid-row: r2 / r3;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.disc {
+  grid-column: c10 / c11;
+  grid-row: r2 / r3;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.skype {
+  grid-column: c9 / c10;
+  grid-row: r3 / r4;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.location {
+  grid-column: c10 / c11;
+  grid-row: r3 / r4;
+  background-color: #fff;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.photos {
+  grid-column: c11 / c13;
+  grid-row: r2 / r4;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.csgo {
+  grid-column: c7 / c9;
+  grid-row: r4 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.fifa {
+  grid-column: c9 / c11;
+  grid-row: r4 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.asphalt {
+  grid-column: c11 / c13;
+  grid-row: r4 / r6;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.dbz {
+  grid-column: c7 / c9;
+  grid-row: r6 / r8;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.genshin {
+  grid-column: c9 / c11;
+  grid-row: r6 / r8;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.gta {
+  grid-column: c11 / c13;
+  grid-row: r6 / r8;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.oem {
+  grid-column: c7 / c13;
+  grid-row: r8 / r9;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.om {
+  display: flex;
+  grid-column: c7 / c9;
+  grid-row: r9 / r11;
+  object-fit: fill;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13,29,73);
+}
+.setting {
+  grid-column: c9 / c10;
+  grid-row: r9 / r10;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.cube {
+  grid-column: c10 / c11;
+  grid-row: r9 / r10;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.photo {
+  grid-column: c9 / c10;
+  grid-row: r10 / r11;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.clock {
+  grid-column: c10 / c11;
+  grid-row: r10 / r11;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.om2 {
+  display: flex;
+  grid-column: c11 / c13;
+  grid-row: r9 / r11;
+  object-fit: fill;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13,29,73);
+}
+.audio {
+  grid-column: c7 / c9;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.macfree {
+  grid-column: c9 / c11;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.shopping {
+  grid-column: c11 / c13;
+  grid-row: r11 / r13;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
