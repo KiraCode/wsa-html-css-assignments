@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.container {
+  position: relative;
+}
+.container img {
+  vertical-align: middle;
+  width: 100%;
+  height: 700px;
+  object-fit: fill;
+}
+
+.container .content {
+  position: absolute;
+  top: 10%;
+  left: 100px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.title {
+  color: white;
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+.club {
+  color: black;
+  background-color: white;
+}
+.description {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.shopnow {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  font-weight: bold;
+}
+.club {
+  background: white;
+  color: black;
+  font-weight: bolder;
+  margin-left: 5px;
+  border: none;
+}

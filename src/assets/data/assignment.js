@@ -37,11 +37,65 @@ const details = [
       "pre tag : Create a basic HTML code structure using the <code> tag.",
     fileNames: ["index.html"],
   },
-   {
+  {
     id: 5,
-    description:
-      `Create a recipe page using HTML and CSS based on the provided template.`,
+    description: `Create a recipe page using HTML and CSS based on the provided template.`,
     fileNames: ["index.html"],
+  },
+  {
+    id: 6,
+    description: `Write the form as depicted in the below image`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 7,
+    description: `Create the navbar as shown below`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 8,
+    description: `Create the paragraph as depicted below and apply the css using pseudo classes.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 9,
+    description: `Create the navbar as depicted in the below image using pseudo elements. Create the line separator using pseudo elements. Required image is provided in the google drive link.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 10,
+    description: `Create the webpage shown in the below image using proper margin, padding and box-sizing if required. Make use of float and clear property. Completion requirements`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 11,
+    description: `Create the following page using background property`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 12,
+    description: `Create the following responsive webpage as shown in the below image. Required images are provided in drive.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 13,
+    description: `Create the following layout using grid.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 14,
+    description: `Create the following windows 10 layout using CSS grid. Images are provided in the drive.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 15,
+    description: `Create the following Layout and apply the transform as shown below. Images are provided in the drive.`,
+    fileNames: ["index.html", "style.css"],
+  },
+  {
+    id: 16,
+    description: `Create the following Layout using grid as shown below and apply the transition on Hover..`,
+    fileNames: ["index.html", "style.css"],
   },
 ];
 

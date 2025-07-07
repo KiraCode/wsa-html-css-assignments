@@ -1,0 +1,122 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(6, 100px);
+  gap: 10px;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 2s ease;
+}
+
+.hover-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+
+#item-a:hover {
+  grid-column: span 3;
+  grid-row: span 1;
+  background-color: red;
+  color: white;
+}
+
+#item-a:hover ~ #item-b {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#item-a:hover ~ #item-c {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#item-a:hover ~ #item-h {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#item-c:hover ~ #item-d,
+#item-c:hover ~ #item-e,
+#item-c:hover ~ #item-f,
+#item-c:hover ~ #item-g,
+#item-c:hover ~ #item-h {
+  grid-column: span 3;
+  grid-row: span 1;
+  background-color: cyan;
+}
+
+#item-h:hover {
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: green;
+}
+
+#item-b:hover {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #007bff;
+  color: white;
+}
+
+#item-b:hover ~ #item-a {
+  display: none;
+  grid-column: span 0;
+  grid-row: span 0;
+}
+
+#item-b:hover ~ #item-c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+
+#item-b:hover ~ #item-d {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+#item-b:hover ~ #item-e {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
+#item-b:hover ~ #item-f {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+}
+#item-b:hover ~ #item-g {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+}
+#item-b:hover ~ #item-h {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+}

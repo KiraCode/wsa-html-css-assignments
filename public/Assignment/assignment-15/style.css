@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, pink, lightblue);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.album-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.album {
+  width: 200px;
+  height: 200px;
+}
+
+.songName {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.songName p {
+  padding: 0px;
+  margin: 5px;
+}
+.right {
+  transform: skewY(25deg);
+  background: linear-gradient(to left, yellow, pink);
+  position: relative;
+  text-align: right;
+}
+.left {
+  transform: skewY(-25deg);
+  background: linear-gradient(to right, yellow, pink);
+  position: relative;
+  text-align: left;
+}
+
+.num {
+  font-size: smaller;
+}
+.songName {
+  font-weight: bold;
+}
+.release {
+  font-size: smaller;
+  font-weight: lighter;
+}
