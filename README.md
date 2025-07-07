@@ -21,7 +21,7 @@ These mini-projects simulate real-world components and layouts, helping build a 
 
 ## 🖼️ UI Overview
 
-![Assignments Screenshot](./assets/assignment.png)
+![Assignments Screenshot](./src/assets/assignment.png)
 
 
 ## 🛠️ Tech Stack
