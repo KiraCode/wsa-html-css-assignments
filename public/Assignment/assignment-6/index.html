@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="head1">Buy Tickets to the Web Developers Gala</h1>
+      <h5 class="head5">
+        Tickets are $50 each. Dinner package are an extra $5. All fields are
+        required
+      </h5>
+      <form class="form">
+        <fieldset class="ticket-container ticket">
+          <legend>Ticker and Add-ons</legend>
+
+          <label for="no-ticket" class="ticket-no txt"
+            >Number of Tickets <span>Limit 8</span></label
+          >
+          <input type="text" id="no-ticket" name="no-ticket" required /><br />
+
+          <label for="dinner-package" class="dinner txt"
+            >Dinner packages <span>Serve 2</span></label
+          >
+          <input
+            type="text"
+            id="dinner-package"
+            name="dinner-package"
+            required
+          /><br />
+        </fieldset>
+
+        <fieldset class="payment-container ticket">
+          <legend>Payment</legend>
+
+          <label for="card-no" class="payment pay"
+            >Credit Card Number <span>No spaces or dashes, please</span></label
+          >
+          <input
+            type="text"
+            id="card-no"
+            name="card-no"
+            placeholder="3270000000008"
+            required
+          />
+          <br />
+
+          <label for="exp-date" class="expiration-dt pay"
+            >Expiration Date <span>MM/YYYY</span></label
+          >
+          <input
+            type="text"
+            id="exp-date"
+            name="exp-date"
+            placeholder="01/2018"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="billing-details-containers ticket">
+          <legend>Billing Address</legend>
+
+          <label for="name" class="name txt">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="ex John Wick"
+            required
+          /><br /><br />
+
+          <label for="street-add" class="address txt">Street Address</label
+          ><br />
+          <input
+            type="text"
+            id="street-add"
+            name="street-add"
+            placeholder="ex 12345 Main Street. Apt23"
+            required
+          /><br /><br />
+
+          <label for="city" class="city txt">Number of Tickets</label><br />
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="ex Anytown"
+            required
+          /><br /><br />
+
+          <label for="state" class="state txt">Number of Tickets</label><br />
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="CA"
+            required
+          /><br /><br />
+
+          <label for="pincode" class="pincode txt">Number of Tickets</label>
+          <br />
+          <input
+            type="number"
+            id="pincode"
+            name="pincode"
+            placeholder="12345"
+            required
+          /><br />
+        </fieldset>
+        <button type="submit" class="buy-ticket">Buy Ticket</button>
+      </form>
+    </div>
+  </body>
+</html>

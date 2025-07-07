@@ -1,0 +1,50 @@
+.container {
+  background-color: bisque;
+  box-sizing: border-box;
+  padding: 0px 100px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.head1 {
+  color: purple;
+}
+.head5 {
+  color: rgb(86, 194, 230);
+}
+.ticket {
+  border: 2px solid;
+  background-color: aqua;
+  margin: 50px 0px;
+  padding: 50px 0px;
+}
+fieldset legend {
+  border: 1px solid black;
+  background-color: white;
+  color: red;
+  font-size: 1.5rem;
+  text-align: right;
+}
+.pay {
+  color: navy;
+  font-size: 1.5rem;
+}
+.txt {
+  color: green;
+  font-size: 1.5rem;
+}
+input {
+  height: 30px;
+  width: 25%;
+}
+span {
+  color: red;
+  font-size: small;
+}
+.buy-ticket {
+  background-color: red;
+  text-align: center;
+  font-size: 2em;
+  height: 3em;
+  width: 6em;
+}

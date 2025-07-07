@@ -37,11 +37,15 @@ const details = [
       "pre tag : Create a basic HTML code structure using the <code> tag.",
     fileNames: ["index.html"],
   },
-   {
+  {
     id: 5,
-    description:
-      `Create a recipe page using HTML and CSS based on the provided template.`,
+    description: `Create a recipe page using HTML and CSS based on the provided template.`,
     fileNames: ["index.html"],
+  },
+  {
+    id: 6,
+    description: `Write the form as depicted in the below image`,
+    fileNames: ["index.html",'style.css'],
   },
 ];
 
