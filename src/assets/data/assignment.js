@@ -52,6 +52,11 @@ const details = [
     description: `Create the navbar as shown below`,
     fileNames: ["index.html",'style.css'],
   },
+  {
+    id: 8,
+    description: `Create the paragraph as depicted below and apply the css using pseudo classes.`,
+    fileNames: ["index.html",'style.css'],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({
