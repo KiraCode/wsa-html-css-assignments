@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
+.nav-bar {
+  display: flex;
+  padding: 20px;
+}
+.lifeleck {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 320px;
+  margin-left: 0px;
+}
+.menu-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 550px;
+}
+li {
+  margin: 0 35px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.fashion-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.life-style {
+  flex: 1 1 calc(33.33% - 15px);
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.style-content {
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  width: 500px;
+  height: 70px;
+  top: -50px;
+}
+.category {
+  margin-top: 5px;
+  color: red;
+  font-size: small;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.title {
+  font-size: 25px;
+  margin: 5px 0;
+  width: 265px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.date {
+  color: gray;
+  font-size: x-small;
+}
+.life-style img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 400px;
+  padding-right: 0px;
+}
+@media (max-width: 1700) {
+  .lifeleck {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    right: 0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+  }
+  li {
+    margin: 10px 0;
+  }
+  a {
+    color: white;
+  }
+  .fashion-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .life-style {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
+  }
+
+  .life-style:nth-child(3) {
+    flex: 1 1 100%;
+    max-width: 50%;
+  }
+
+  .life-style img {
+    width: 90%;
+    height: 330px;
+  }
+}
+@media (max-width: 500px) {
+  .lifeleck {
+    margin-left: 100px;
+  }
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    right: 0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+  }
+  li {
+    margin: 10px 0;
+  }
+  a {
+    color: white;
+  }
+
+  .fashion-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .life-style {
+    flex: 1 1 100%;
+    max-width: 50%;
+  }
+
+  .life-style img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 60%;
+  }
+
+  .style-content {
+    width: 80%;
+    height: 100%;
+    top: -111px;
+    left: 40%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .title {
+    font-size: medium;
+    width: 100%;
+  }
+}
