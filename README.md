@@ -1,12 +1,43 @@
-# React + Vite
+# 📝 HTML & CSS Assignments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This section includes a collection of hands-on assignments built using only HTML and CSS. Each project focuses on strengthening foundational web development skills, including:
 
-Currently, two official plugins are available:
+🏗️ Semantic HTML structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📱 Responsive layouts
 
-## Expanding the ESLint configuration
+🎨 Styling with CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔲 Grid and Flexbox designs
+
+🧾 Forms and input elements
+
+🧭 Navigation menus
+
+✍️ Visual presentation and typography
+
+These mini-projects simulate real-world components and layouts, helping build a strong frontend base without using JavaScript or frameworks.
+
+
+## 🖼️ UI Overview
+
+![Assignments Screenshot](./assets/assignment.png)
+
+
+## 🛠️ Tech Stack
+
+- **HTML**
+- **CSS**
+
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://assignments-html-css-wsa.netlify.app/)
+
+
+## 📄 License
+
+MIT License
+
+Copyright (c) 2025 Tejas
+
+Open source under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
