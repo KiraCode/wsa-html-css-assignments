@@ -92,6 +92,11 @@ const details = [
     description: `Create the following Layout and apply the transform as shown below. Images are provided in the drive.`,
     fileNames: ["index.html", "style.css"],
   },
+  {
+    id: 16,
+    description: `Create the following Layout using grid as shown below and apply the transition on Hover..`,
+    fileNames: ["index.html", "style.css"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({

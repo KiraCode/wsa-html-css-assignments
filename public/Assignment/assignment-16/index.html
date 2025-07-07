@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout with Transitions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="item-a">A hover</div>
+      <div class="grid-item" id="item-b">B hover</div>
+      <div class="grid-item" id="item-c">C hover</div>
+      <div class="grid-item" id="item-d">D</div>
+      <div class="grid-item" id="item-e">E</div>
+      <div class="grid-item" id="item-f">F</div>
+      <div class="grid-item" id="item-g">G</div>
+      <div class="grid-item" id="item-h">H hover</div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let boxA = document.getElementById("item-a");
+        let boxB = document.getElementById("item-b");
+        boxB.addEventListener("mouseenter", function () {
+          boxA.classList.add("hidden");
+        });
+        boxB.addEventListener("mouseleave", function () {
+          boxA.classList.remove("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
