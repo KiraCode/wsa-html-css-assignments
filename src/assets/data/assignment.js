@@ -87,6 +87,11 @@ const details = [
     description: `Create the following windows 10 layout using CSS grid. Images are provided in the drive.`,
     fileNames: ["index.html", "style.css"],
   },
+  {
+    id: 15,
+    description: `Create the following Layout and apply the transform as shown below. Images are provided in the drive.`,
+    fileNames: ["index.html", "style.css"],
+  },
 ];
 
 export const assignment = details.map(({ id, description, fileNames }) => ({
